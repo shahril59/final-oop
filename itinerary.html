@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Itinerary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Create Travel Itinerary</h1>
+        
+        <div class="itinerary-form">
+            <label for="dateInput">Select Date:</label>
+            <input type="date" id="dateInput" class="date-input">
+            
+            <label for="planInput">Your Plan:</label>
+            <textarea id="planInput" rows="5" placeholder="Write your travel plans here..." class="plan-input"></textarea>
+            
+            <div class="form-buttons">
+                <button id="saveBtn" class="save-btn">Save Itinerary</button>
+                <button id="clearBtn" class="clear-btn">Clear Form</button>
+            </div>
+        </div>
+        
+        <div class="itineraries-section">
+            <h2>Saved Itineraries</h2>
+            <button id="viewItinerariesBtn" class="view-btn">Refresh Itineraries</button>
+            <div id="itineraryList" class="itinerary-list"></div>
+        </div>
+        
+        <div class="navigation">
+            <button onclick="window.location.href='index.html'" class="back-btn">Back to Weather</button>
+        </div>
+    </div>
+    
+    <script src="itinerary.js"></script>
+</body>
+</html>
